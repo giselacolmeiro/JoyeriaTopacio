@@ -1,0 +1,148 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="keywords" content="joyas, joyeria, relojeria, jewelry">
+    <title>Joyeria Topacio</title>
+    <link rel="stylesheet" href="styles.css">
+    <link rel="stylesheet" href="contacto.css">
+    <link rel="shortcut icon" href="img/topacio.ico">
+    <script src="https://kit.fontawesome.com/3a17cab45f.js" crossorigin="anonymous"></script>
+    <link rel="stylesheet" href="https://kit.fontawesome.com/3a17cab45f.js">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Lobster&family=Lobster+Two&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css?family=Open+Sans:300,400,700,800&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css"/>
+</head>
+
+<body>
+    <header>
+        <h1 class="logo">Joyeria Topacio</h1>
+        <input type="checkbox" id="check">
+        <label for="check" class="mostrar-menu">
+            &#8801
+        </label>
+        <nav class="menu">
+        <a href="index.html"><i class="fa-solid fa-house-chimney"></i>Inicio</a>
+        <a href="catalogo.html"><i class="fa-solid fa-images"></i>Catalogo</a>
+        <a href="contacto.html"><i class="fa-solid fa-feather"></i>Contacto</a>
+        <label for="check" class="esconder-menu">
+            &#215
+        </label>
+    </nav>
+    </header>    
+    <section class="container">
+        <div class="contactUs">
+            <div class="titulo">
+                <h2 class="animate__animated animate__pulse">Contacto</h2>
+            </div>
+            <div class="box">
+                <!-- formulario -->
+                <div class="contact-form">
+                    <h3>Escribinos</h3>
+                    <p>Envienos un mensaje y recibira una respuesta a la brevedad</p>
+                    <br>
+                    <form action="https://formspree.io/f/xyyoloyp" id="formulario" method="POST" target="_blank" >
+                        <div class="formBox">
+                            <div class="datos">
+                                <div class="inputBox">
+                                    <label><h4 class="animate__bounceIn">Nombre</h4>
+                                        <input type="text" name="" id='nombre' placeholder="Escriba su Nombre">
+                                    </label>
+                                    <br>
+                                    <br>
+                                    <label>
+                                        <h4 class="animate__bounceIn">Apellido</h4>
+                                        <input type="text" name="" id='lastname' placeholder="Escriba su Apellido">
+                                    </label>
+                                </div>
+                            </div>
+                            <div class="datos">
+                                <div class="inputBox">
+                                    <label>
+                                        <h4 class="animate__bounceIn">Email</h4>
+                                        <input type="email" name="" id='email' placeholder="Escriba su E-mail">
+                                    </label>
+                                    <br>
+                                    <label>
+                                        <h4 class="animate__bounceIn">Celular</h4>
+                                        <input type="mobile" name="" id='phone' placeholder="Escriba su número">
+                                    </label>
+                                </div>
+                            </div>
+                            <br>
+                            <div class="motivo">
+                                <br>
+                                <div class="inputBox">
+                                    <label class="textlab">
+                                        <h4 class="animate__bounceIn">Mensaje</h4>
+                                        <br>
+                                        <textarea name="Mensaje" cols="30" rows="10"
+                                            placeholder="Escriba su mensaje"></textarea>
+                                    </label>
+                                </div>
+                                <br>
+                            </div>                         
+                            <div class="motivo">
+                                <div class="inputBox">                                  
+                                  <input type="submit" value="Enviar" onsubmit='enviarFormulario()' onclick='enviarFormulario()'>
+                                </div>
+                            </div>
+                        </div>
+                    </form>
+                <div id="error"></div>    
+            </div>
+
+                <!-- Info -->
+                <div class="info">
+                    <h3>Datos de Contacto</h3>
+                    <br>
+                    <div class="infoContact">
+                        <div>
+                            <span><i class="fa-solid fa-location-dot"></i></span>
+                            <p>Presidente Perón, Valentin Alsina, Lanús Oeste</p>
+                        </div>
+                        <div>
+                            <span><i class="fa-solid fa-envelope"></i></span>
+                            <a href="mailto:joyasyrelojes.topacio@gmail.com">joyasyrelojes.topacio@gmail.com</a>
+                        </div>
+                        <div>
+                            <span><i class="fa-solid fa-phone"></i></span>
+                            <a href="cel:+541168006203">+541168006203</a>
+                        </div>
+                        
+                        <ul class="redes">
+                            <li><a href="https://www.instagram.com/topaciojoyasyrelojes" target="_blank"><i class="fa-brands fa-instagram"></i></a></li>
+                            <li><a href="https://www.facebook.com/topaciojoyasyrelojes" target="_blank"><i class="fa-brands fa-facebook"></i></a></li>
+                            <li><a href="https://wa.me/1568006203?text=Hola, te estas comunicando con Joyeria Topacio, en que podemos ayudarte?" target="_blank"><i class="fa-brands fa-whatsapp"></i></a></li>
+                        </ul>
+                    </div>
+                    <p class="dibujo">ʕ•́ᴥ•̀ʔっ♡</p>
+                </div>
+                    
+                <!-- Map -->
+                <div class="contact-map">
+                    <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3281.193640222665!2d-58.40605688513714!3d-34.67506198044111!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x95bccc90435c695d%3A0x696a7bd0de80172!2sJoyer%C3%ADa%20y%20Relojer%C3%ADa%20Topacio!5e0!3m2!1ses!2sar!4v1649289434793!5m2!1ses!2sar" width="400" height="300" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade" title="mymap"></iframe>
+                </div>
+            </div>
+        </div>
+    </section>
+    <br>
+    <br>
+    <br>
+    <footer id="footer">
+        <div class="pie-pagina">
+            <div class="grupo2">
+                <p><i class="fa-solid fa-copyright"></i> 2022 <b>Joyeria Topacio</b> - Todos los Derechos Reservados.</p>
+            </div>
+        </div>
+    </footer>
+
+<script src="script.js"></script>
+</body>
+
+</html>

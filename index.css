@@ -1,0 +1,250 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body{
+    max-width: 100%;
+    overflow-x: hidden;
+    margin: 0;
+    display: flex;
+    flex-direction: column;
+    background: linear-gradient(70deg , violet ,white);
+}
+
+.contenedor-nosotros{
+    margin-top: 10rem;
+    align-items: auto;
+}
+
+.container{
+    background-color:white;
+    padding:10px 10px 20px 10px;
+    border:1px solid #BFBFBF;
+    box-shadow:10px 10px 30px rgba(0, 0, 0, 0.8);  
+    margin-top: 5%;
+}
+
+.carousel-inner img{
+    width: 100px;
+    height: 500px;
+}
+/*
+.menu h1{
+    font-size: 35px;
+    margin-right: 15%;
+}*/
+
+.titulo{
+    color: #642a73;
+    font-size: 50px; 
+    text-align: center;
+    margin-top: 90px;
+    display: block;
+    position: center;
+    text-transform: uppercase;
+    font-family: Topacio;
+    font-weight: bold;
+    letter-spacing: 0.3em;
+    word-spacing: 0.9em;
+}
+
+.nosotros{
+    display: flex;
+    justify-content: space-evenly;
+    margin-top: 5%;
+}
+
+.nosotros img{
+    height: 400px;
+    width: 600px;
+    border-radius: 5px;
+    float: left;
+    margin-left: 30px;
+    box-shadow: 10px 10px 30px rgba(0, 0, 0, 0.8);
+}
+
+.nosotros p{
+    width: 50%;
+    text-align: center;
+    font-size: 18px;
+    line-height: 25px;
+    box-shadow: 10px 10px 30px rgba(0,0,0,.8);
+    border-radius: 4px;
+    padding: 70px 50px 20px 50px;
+    font-weight: 10px;
+    text-align: center;
+    margin-bottom: 1.6em;
+    background: white;
+    border: 1px solid #BFBFBF;
+    border-radius: 1rem;
+}
+
+/*Portafolio*/
+
+.contenedor{
+    padding: 60px 0;
+    width: 90%;
+    max-width: 1000px;
+    margin: auto;
+    overflow: hidden;
+}
+
+.titulofolio{
+    color: #642a73;
+    font-size: 50px;
+    text-align: center;
+    margin-bottom: 90px;
+    display: block;
+    position: center;    
+    text-transform: uppercase;
+    font-family: Topacio;
+    font-weight: bold;
+    letter-spacing: .3em;
+    word-spacing: .9em;
+}
+
+.cuerpo{
+    display: flex;
+}
+
+.catalogo{
+    margin-top: 8%;
+    margin-right: 10%;
+    margin-left: 10%;
+    border-radius: 1rem;
+    background-color: white;
+    border-radius: 1rem;
+    padding:10px 10px 20px 10px;
+    border:1px solid #BFBFBF;
+    box-shadow:10px 10px 30px rgba(0, 0, 0, 0.8);
+}
+
+.galeria-port{
+    display: flex;
+    justify-content: space-evenly;
+    flex-wrap: wrap;
+}
+
+.imagen-port{
+    width: 24%;
+    margin-bottom: 10px; 
+    overflow: hidden;
+    position: relative;
+    cursor: pointer;
+    box-shadow: 0 0 6px 0 rgba(0, 0, 0, .5);  
+}
+
+.imagen-port > img{
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    display: block;
+}
+
+.hover-galeria{
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    top: 0;
+    transform: scale(0);
+    background: hsla(273, 91%, 27%, 0.7);
+    transition: transform .5s;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+
+.hover-galeria img{
+    width: 100%;
+    height: 100%;
+}
+
+.hover-galeria p{
+    color: #ffff;
+}
+
+.imagen-port:hover .hover-galeria{
+    transform: scale(1);
+}
+
+/*Footer*/
+.grupo2{
+    font-size: .9em;
+}
+
+
+/* RESPONSIVE */
+@media(max-width: 768px){
+    .container{
+        width: 5%;
+        height: 10%;
+    }    
+
+    .nosotros{
+        flex-direction: column;
+    }
+
+    .nosotros img{
+        width: 80%;
+    }
+
+    .nosotros p{
+        margin-top: 10%;
+        margin-left: 10%;
+        width: 80%;
+        padding: 70px 50px 70px 50px;   
+    }
+
+    .catalogo{
+        width: 80%;
+    }
+    .catalogo h2{
+        font-size: 2.5em;
+    }
+    .hover-galeria img{
+        align-items: center;
+        margin-top: 25%;
+        margin-left: 15%;
+        width: 70%;
+        height: 75%;          
+    } 
+}
+
+@media(max-width: 1300px){
+    .container{
+        width: 5%;
+        height: 10%;
+    }    
+
+    .nosotros{
+        flex-direction: column;
+    }
+
+    .nosotros img{
+        margin: auto;
+    }
+
+    .nosotros p{
+        margin-top: 10%;
+        margin-left: 10%;
+        width: 80%;
+
+        padding: 70px 50px 70px 50px;
+    }
+    .catalogo{
+        width: 80%;
+    }
+    .catalogo h2{
+        font-size: 2.5em;
+    }
+    .hover-galeria img{
+        align-items: center;
+        margin-top: 25%;
+        margin-left: 15%;
+        width: 70%;
+        height: 75%; 
+    } 
+}
